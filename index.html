@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LIstas de compra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="./imagens/FFlist.png">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+      <img src="./imagens/logo.png" alt="Logo do quicklist">
+    </header>
+
+    <main>
+        <section class="adicionar-item">
+          <h1>Compras da semana</h1>
+
+          <div>
+              <input type="text" placeholder="Adicione texto" id="novo-item">
+              <button id="save">Adicionar item</button>
+          </div>
+        </section>
+
+        <section class="itens">
+          <div class="item">
+              <div>
+                <input type="checkbox" id="item-1">
+                <label for="item-1">Pão de forma</label>
+              </div>
+
+              <button>
+                <img src="./imagens/trash-icon.svg" alt="item ao lixo">
+              </button>
+          </div>
+          <div class="item">
+              <div>
+                <input type="checkbox" id="item-2">
+                <label for="item-2">Café preto</label>
+              </div>
+
+              <button>
+                <img src="./imagens/trash-icon.svg" alt="item ao lixo">
+              </button>
+          </div>
+          <div class="item">
+              <div>
+                <input type="checkbox" id="item-3">
+                <label for="item-3">Suco de laranja</label>
+              </div>
+
+              <button>
+                <img src="./imagens/trash-icon.svg" alt="item ao lixo">
+              </button>
+          </div>
+        </section>
+    </main>
+</body>
+</html>
