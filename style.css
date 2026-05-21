@@ -67,13 +67,10 @@ header {
         background-color: var(--color-brand);
         line-height: 2rem;
         color: var(--always-white);
-        font-size: 600;
-        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        font-size: 600; 
     }
 
     button:hover {
         background: var(--color-brand-hover);
-        transform: scale(1.02);
-        transition: 0.4;
     }
 }
