@@ -74,3 +74,56 @@ header {
         background: var(--color-brand-hover);
     }
 }
+
+.itens {
+    margin-top: 4rem;
+
+    .item {
+        background: var(--background-secondary);
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem;
+        align-items: center;
+        border-radius: 1.2rem;
+
+        button {
+            border: none;
+            background: none;
+        }
+
+        .checkbox-custumizada {
+            border: 1px solid var(--border-primary);
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+        }
+
+        input {
+            display: none;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        div:has(input:checked) {
+            .checkbox-custumizada {
+                background: var(--color-brand);
+                border-color: var(--color-brand);
+                transition: background 0.2s ease;
+            }
+
+            label {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
