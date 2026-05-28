@@ -1,16 +1,25 @@
-/*
-let h1 = document.querySelector("h1")
-let botao = document.querySelector("#save")
+let itens = []
 
-function alterarH1(){
-    let nome = document.querySelector("#novo-item").value;
+const botaoAdicionarItens = document.querySelector(".adicionar-item button")
+const textAdicionarItens = document.querySelector(".adicionar-item input")
+botaoAdicionarItens.addEventListener("click", adcionarItem)
+
+function adcionarItem(){
+    const textInput = document.querySelector("#novo-item").value
     
-    if (nome === ""){
-        h1.innerText = "Compras da semana"
+    if (textInput === "") {
+        alert("Digite um item válido")
     } else {
-        h1.innerText = nome
+        const novoItem = {
+            descricao: textInput,
+            concluido: false
+        }
+
+        itens.push(novoItem)
+
+        document.querySelector("#novo-item").value = ""
+        console.log(itens)
     }
-    
 }
 
 
@@ -20,6 +29,25 @@ function alterarH1(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     NOTA:
         querySelector: procura por um "H1" por exemplo.
         Ele acha o primeiro h1 em ordem execução.
