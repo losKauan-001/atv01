@@ -86,6 +86,9 @@ header {
         padding: 1.2rem;
         align-items: center;
         border-radius: 1.2rem;
+        
+        box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
+        line-height: 2.4rem;
 
         button {
             border: none;
@@ -124,6 +127,31 @@ header {
             label {
                 text-decoration: line-through;
             }
+        }
+    }
+}
+
+@media(min-width: 630px) {
+    main {
+        max-width: 62.7rem;
+        margin-inline: auto;
+    }
+
+    .adicionar-item {
+        div {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 1.6rem;
+        }
+
+        input {
+            margin-bottom: 0;
+            grid-column: 1 / 8;
+        }
+
+        button {
+            grid-column: 8 / 11;
+            cursor: pointer;
         }
     }
 }
