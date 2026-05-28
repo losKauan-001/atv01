@@ -86,13 +86,18 @@ header {
         padding: 1.2rem;
         align-items: center;
         border-radius: 1.2rem;
-        
+
         box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
         line-height: 2.4rem;
 
         button {
             border: none;
             background: none;
+
+            img {
+                width: 1.6rem;
+                opacity: 0.7rem;
+            }
         }
 
         .checkbox-custumizada {
